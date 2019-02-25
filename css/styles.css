@@ -1,12 +1,69 @@
 /*
   DIAGNOSTIC STYLING
 */
-body {
-  background: gray;
-}
+/* External styling from: https://codepen.io/manikoth/pen/NNNBYe.css
+ */
+/* Doodle Stage */
+#stage {
+  /*   border: 1px dashed black; */
+    /* Fixxed sizes   */
+    height: 290px;
+    width: 600px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #stage svg{
+    position: absolute;
+    
+  }
+  
+  
+  
+  #stage #choruru-0 svg{
+  /*   border: red dashed 1px; */
+    position: absolute;
+    right: 490px; 
+    bottom: 125px;
+    transform: rotate(34deg);
+    transition: right 1s; 
+    
+  }
+  
+  /* last frame */
+  #stage:hover #choruru-0 svg {
+    right: 460px; 
+  }
+  
+  #stage #choruru-1 svg{
+  /*   border: red dashed 1px; */
+    position: absolute;
+    right: 350px; 
+    bottom: 120px;
+    transition: bottom 1s; 
+    
+  }
+  
+  /* last frame */
+  #stage:hover #choruru-1 svg {
+  bottom: 162px;
+  }
+  
+  #stage #choruru-2 svg{
+  /*   border: red dashed 1px; */
+    position: absolute;
+    right: 199px; 
+    bottom: 40px;
+    transform: scaleX(-1) rotate(40deg);
+    transition: right 1s; 
+    
+  }
+  
+  /* last frame */
+  #stage:hover #choruru-2 svg {
+  right: 255px;
+    
+  }
+  
+  
 
-* {
-  outline: 1px dotted black;
-}
-
-/* Your Awesome Scripts */
